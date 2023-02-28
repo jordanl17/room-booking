@@ -1,7 +1,7 @@
 import { RoomCardSkeleton } from '@molecules/RoomCard'
 
 const RoomListSkeleton = () => (
-  <div data-testid="room-list-skeleton">
+  <div data-testid="room-list-skeleton" className="contents">
     {Array(6)
       .fill(undefined)
       .map((_, index) => (
