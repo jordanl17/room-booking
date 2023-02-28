@@ -1,7 +1,10 @@
 import { RoomCardSkeleton } from '@molecules/RoomCard'
 
 const RoomListSkeleton = () => (
-  <div data-testid="room-list-skeleton" className="contents">
+  <ul
+    data-testid="room-list-skeleton"
+    className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+  >
     {Array(6)
       .fill(undefined)
       .map((_, index) => (
@@ -9,7 +12,7 @@ const RoomListSkeleton = () => (
           <RoomCardSkeleton />
         </li>
       ))}
-  </div>
+  </ul>
 )
 
 export default RoomListSkeleton
