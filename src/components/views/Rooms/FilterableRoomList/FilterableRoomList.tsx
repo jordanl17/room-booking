@@ -136,7 +136,7 @@ const FilterableRoomList = () => {
     <section>
       {renderListFilters()}
       <ul className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <RoomList rooms={visibleRooms} isLoading={true} />
+        <RoomList rooms={visibleRooms} isLoading={isLoading} />
       </ul>
     </section>
   )
