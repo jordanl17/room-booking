@@ -1,7 +1,7 @@
-import { RoomCardSkeleton } from '@atoms/RoomCard'
+import { RoomCardSkeleton } from '@molecules/RoomCard'
 
 const RoomListSkeleton = () => (
-  <>
+  <div data-testid="room-list-skeleton">
     {Array(6)
       .fill(undefined)
       .map((_, index) => (
@@ -9,7 +9,7 @@ const RoomListSkeleton = () => (
           <RoomCardSkeleton />
         </li>
       ))}
-  </>
+  </div>
 )
 
 export default RoomListSkeleton

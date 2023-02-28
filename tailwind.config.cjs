@@ -1,5 +1,4 @@
-const { green } = require('tailwindcss/colors')
-const colors = require('tailwindcss/colors')
+var colors = require('tailwindcss/colors')
 
 module.exports = {
   content: [
@@ -19,5 +18,8 @@ module.exports = {
       }
     },
   },
+  safelist: [{
+    pattern: /(bg|text|border)-(Purple|Pink|Orange|Yellow|Lime|Mint|Test|Test2)/
+}],
   plugins: [],
 }

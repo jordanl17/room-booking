@@ -1,6 +1,6 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import { resolve } from "path";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,25 +9,29 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: "@molecules",
-        replacement: resolve(__dirname, ".", "src/components/molecules"),
+        find: '@molecules',
+        replacement: resolve(__dirname, '.', 'src/components/molecules'),
       },
       {
-        find: "@atoms",
-        replacement: resolve(__dirname, ".", "src/components/atoms"),
+        find: '@atoms',
+        replacement: resolve(__dirname, '.', 'src/components/atoms'),
       },
       {
-        find: "@views",
-        replacement: resolve(__dirname, ".", "src/components/views"),
+        find: '@views',
+        replacement: resolve(__dirname, '.', 'src/components/views'),
       },
       {
-        find: "@constants",
-        replacement: resolve(__dirname, ".", "src/constants"),
+        find: '@constants',
+        replacement: resolve(__dirname, '.', 'src/constants'),
       },
       {
-        find: "@contexts",
-        replacement: resolve(__dirname, ".", "src/contexts"),
+        find: '@contexts',
+        replacement: resolve(__dirname, '.', 'src/contexts'),
+      },
+      {
+        find: '@utils',
+        replacement: resolve(__dirname, '.', 'src/utils'),
       },
     ],
   },
-});
+})

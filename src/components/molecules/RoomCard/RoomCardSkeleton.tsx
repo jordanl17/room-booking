@@ -1,4 +1,4 @@
-const RoomListSkeleton = () => (
+const RoomCardSkeleton = () => (
   <div className="animate-pulse">
     <div className="w-full h-56 bg-grey" />
     <div className="w-1/2 h-4 bg-grey my-2" />
@@ -6,4 +6,4 @@ const RoomListSkeleton = () => (
   </div>
 )
 
-export default RoomListSkeleton
+export default RoomCardSkeleton

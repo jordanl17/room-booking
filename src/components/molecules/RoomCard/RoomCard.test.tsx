@@ -1,7 +1,7 @@
 import { useNotifications } from '@contexts/Notifications/notificationsProvider'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { useMutation, useQueryClient } from 'react-query'
-import ComponentTestHarness from '../../../utils/ComponentTestHarness'
+import ComponentTestHarness from '@utils/ComponentTestHarness'
 import RoomCard from './RoomCard'
 
 jest.mock('react-query', () => ({

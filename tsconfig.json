@@ -20,7 +20,8 @@
       "@atoms/*": ["./src/components/atoms/*"],
       "@views/*": ["./src/components/views/*"],
       "@constants/*": ["./src/constants/*"],
-      "@contexts/*": ["./src/contexts/*"]
+      "@contexts/*": ["./src/contexts/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "include": ["src"],

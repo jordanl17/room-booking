@@ -5,5 +5,5 @@ export interface Room {
 }
 
 export interface Rooms {
-  rooms: Room[]
+  readonly rooms: Room[]
 }

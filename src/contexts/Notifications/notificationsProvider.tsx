@@ -17,14 +17,6 @@ export const NOTIFICATION_TYPES = {
   success: 'success',
 } as const
 
-const NOTIFICATION_COLOR: Record<
-  (typeof NOTIFICATION_TYPES)[keyof typeof NOTIFICATION_TYPES],
-  string
-> = {
-  [NOTIFICATION_TYPES.error]: 'red',
-  [NOTIFICATION_TYPES.success]: 'green',
-}
-
 interface Notification {
   type: (typeof NOTIFICATION_TYPES)[keyof typeof NOTIFICATION_TYPES]
   message: string
@@ -86,7 +78,11 @@ const NotificationsProvider = ({
         {notifications.slice(-2).map(({ type, message, id }) => (
           <div
             data-testid={`${type}-notification`}
-            className={`mx-10 bg-${NOTIFICATION_COLOR[type]}-600 text-${NOTIFICATION_COLOR[type]}-200 p-3 my-1`}
+            className={`mx-10 p-3 my-1 ${
+              type === 'error'
+                ? 'bg-red-600 text-red-200'
+                : 'bg-green-600 text-green-200'
+            }`}
             key={`${id}-${message}`}
           >
             {message}

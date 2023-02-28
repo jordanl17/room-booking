@@ -5,10 +5,10 @@ import {
   waitFor,
   within,
 } from '@testing-library/react'
-import ComponentTestHarness from '../../../utils/ComponentTestHarness'
+import ComponentTestHarness from '@utils/ComponentTestHarness'
 import Rooms from './Rooms'
 
-jest.mock('../../../utils/api', () => ({
+jest.mock('@utils/api', () => ({
   getAllRooms: jest.fn().mockReturnValue({
     rooms: [
       { name: 'first room', spots: 2, thumbnail: 'first room image' },
